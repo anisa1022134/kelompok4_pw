@@ -1,5 +1,5 @@
 # kelompok4_pw
 
-anisa
-10222134
-informatika V c
+Nama : anisa
+NIM : 10222134
+Kelas : informatika V c
