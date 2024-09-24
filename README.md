@@ -1,5 +1,5 @@
 # kelompok4_pw
 
-Nama : anisa
+Nama : Anisa
 NIM : 10222134
-Kelas : informatika V c
+Kelas : IF V c
