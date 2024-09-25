@@ -15,3 +15,7 @@ Kelas : Informatika V C
 Nama : Gina Junian Mulia
 NIM : 10222200
 Kelas : Informatika V C
+
+Nama : Fina Triana
+NIM  : 10222132
+Kelas: Informatika V C
