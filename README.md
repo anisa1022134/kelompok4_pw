@@ -14,4 +14,12 @@ Kelas : Informatika V C
 
 Nama : Akbar Yasrilliawan
 NIM : 10222129
-Kelas : Iinformatika V C 
+Kelas : Informatika V C 
+
+Nama : Abdul Fatah
+NIM :
+Kelas : Informatika V C
+
+nama : Fina Triana
+NIM :
+Kelas : Informatika V C
