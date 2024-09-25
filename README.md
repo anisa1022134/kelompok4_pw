@@ -11,3 +11,7 @@ Kelas : Informatika V C
 Nama : Gina Junian Mulia
 NIM : 10222200
 Kelas : Informatika V C
+
+Nama : Akbar Yasrilliawan
+NIM : 10222129
+Kelas : Iinformatika V C 
