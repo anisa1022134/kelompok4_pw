@@ -11,3 +11,7 @@ Kelas: Informatika V C
 Nama : M. Hizaz Badruzaman
 NIM : 10222121
 Kelas : Informatika V C
+
+Nama : Gina Junian Mulia
+NIM : 10222200
+Kelas : Informatika V C
