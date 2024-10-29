@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" >
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
@@ -12,10 +12,10 @@
   </head>
   <body>
     <header>
-      <nav class="shadow navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav class="shadow navbar navbar-expand-lg bg-primary-subtle text-primary-emphasis fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand " href="#">
-            <img src="logo.png" alt="logo" class="logo">
+          <a class="navbar" href="#">
+            <img src="logo.png" alt="logo" class="logo img-fluid no-background">
           </a>
           <button class="navbar-toggler" 
               type="button" 
@@ -86,7 +86,7 @@
       </nav>
     </header>
     <main>
-      <div id="carouselExampleCaptions" class="carousel slide">
+      <div id="carouselExampleCaptions" class="carousel slide mb-5">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -124,10 +124,48 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <h1 class="text-center mb-4">Berita Terbaru</h1>
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="gambar3.jpg" class="card-img-top" alt="Berita 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Judul Berita 1</h5>
+                        <p class="card-text">Ini adalah ringkasan berita 1. Ini memberikan sedikit informasi tentang konten berita.</p>
+                        <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="gambar3.jpg" class="card-img-top" alt="Berita 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Judul Berita 2</h5>
+                        <p class="card-text">Ini adalah ringkasan berita 2. Ini memberikan sedikit informasi tentang konten berita.</p>
+                        <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="gambar3.jpg" class="card-img-top" alt="Berita 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Judul Berita 3</h5>
+                        <p class="card-text">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita.</p>
+                        <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </main>
-    <footer>
+    
+    <footer class="border-top">
       <div class="container">
-        <footer class="py-4">
+        <div class="py-4">
           <div class="row">
             <div class="col-6 col-md-2 mb-3">
               <h5>Section</h5>
@@ -178,8 +216,9 @@
               <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
             </ul>
           </div>
-        </footer>
-      <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></div>
+        </div>
+        <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
+      </div>
     </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
