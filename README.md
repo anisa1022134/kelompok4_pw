@@ -12,6 +12,10 @@ Nama : Gina Junian Mulia
 NIM : 10222200
 Kelas : Informatika V C
 
+Nama : Fina Triana
+NIM  : 10222132
+Kelas: Informatika V C
+
 Nama : Akbar Yasrilliawan
 NIM : 10222129
 Kelas : Iinformatika V C 
@@ -19,3 +23,4 @@ Kelas : Iinformatika V C
 Nama : Abdul Fatah
 NIM : 10222182
 Kelas : Informatika V C
+
