@@ -1,0 +1,32 @@
+main{
+    padding-top: 86px;
+}
+.logo {
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    
+}
+.c-item{
+    height: 560px;
+
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.c-cap{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-size: 18px;
+  }
+.card-item{
+    height: 403.8px;
+}
+.card-img{
+    height: 235.8px;
+    object-fit: cover;
+}
+
