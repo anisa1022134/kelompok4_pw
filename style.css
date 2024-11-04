@@ -30,7 +30,6 @@ main{
     object-fit: cover;
 }
 
-
 .b-item{
     height: 100px;
 
@@ -40,3 +39,22 @@ main{
     object-fit: cover;
     filter: brightness(0.6);
 }
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    display: none;
+  }
+  
+  .dropdown-submenu:hover > .dropdown-menu,
+  .dropdown-submenu:focus-within > .dropdown-menu {
+    display: block;
+  }
+.navbar .dropdown-toggle::after{
+    display: none;
+}  
+
