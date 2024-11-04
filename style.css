@@ -57,4 +57,17 @@ main{
 .navbar .dropdown-toggle::after{
     display: none;
 }  
+label {
+    font-weight: bold;
+}
+body {
+    background-image: url("css/ps.jpg");
+}
+.form-container {
+    max-width: 800px; /* Set a maximum width for the form */
+    margin: auto; /* Center the form horizontally */
+    background-color: white;
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
 
