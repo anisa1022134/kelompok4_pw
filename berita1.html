@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berita Terkini</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="shadow navbar py-0 navbar-expand-lg bg-primary-subtle fixed-top">
+      <div class="container">
+        <a class="navbar" href="index.html">
+          <img src="./Gambar/logo.png" alt="logo" class="logo img-fluid no-background">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-5" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profil</a></li>
+                <li><a class="dropdown-item" href="#">Struktur Kampus</a></li>
+                <li><a class="dropdown-item" href="#">Fasilitas</a></li>
+                <li><a class="dropdown-item" href="#">RIPK/Tahun</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Akademik
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Jurusan</a></li>
+                <li><a class="dropdown-item" href="#">Kalender Akademik</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Mahasiswa
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ormawa (BEM)</a></li>
+                <li><a class="dropdown-item" href="#">Himpunan</a></li>
+                <li><a class="dropdown-item" href="#">UKM</a></li>
+                <li><a class="dropdown-item" href="#">Beasiswa</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link me-3" href="http://s.id/pmbsttc">PMB Online
+              </a>
+            </li>
+            <a class="btn btn-primary" href="#" role="button">Log In</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container my-5">
+      <div class="row">
+        <!-- Bagian Konten Utama -->
+        <div class="col-md-8">
+          <div class="card mb-4">
+            <img src="Gambar/gambar1.jpg" class="card-img-top header-image" alt="Gambar Berita">
+            <div class="card-body">
+              <h2>Judul Berita 1</h2>
+              <p class="text-muted">Dipublikasikan pada 1 November 2024 oleh Admin Kampus</p>
+              <hr>
+              <p>
+                Paragraf pembuka berita yang memberikan gambaran singkat mengenai topik berita ini. Penjelasan awal yang
+                menarik akan membuat pembaca ingin melanjutkan membaca.
+              </p>
+              <p>
+                Paragraf kedua dan seterusnya mencakup detail-detail utama, penjelasan lebih lanjut, serta informasi
+                penting lainnya yang mendalam.
+              </p>
+              <blockquote class="blockquote">
+                <p class="mb-0">"Kutipan yang relevan dengan isi berita atau pernyataan penting dari narasumber."</p>
+              </blockquote>
+              <p>
+                Paragraf terakhir bisa berisi kesimpulan atau penutup yang menekankan poin utama dari berita ini.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bagian Share Buttons -->
+          <div class="share-buttons mb-4">
+            <span>Bagikan: </span>
+            <a href="#"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="#"><i class="bi bi-twitter"></i> Twitter</a>
+            <a href="#"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-4">
+          <!-- Berita Terkait dengan Gambar Thumbnail -->
+          <h3>Berita Terkait</h3>
+          <ul class="list-group related-news">
+            <li class="list-group-item d-flex align-items-center b-item">
+              <img src="Gambar/gambar2.jpg" alt="Judul Berita 2" class="me-3 b-object">
+              <a href="#" class="link-dark link-offset-2 link-underline-opacity-0">Judul Berita 2</a>
+            </li>
+            <li class="list-group-item d-flex align-items-center b-item">
+              <img src="Gambar/gambar3.jpg" alt="Judul Berita 3" class="me-3 b-object">
+              <a href="#" class="link-dark link-offset-2 link-underline-opacity-0">Judul Berita 3</a>
+            </li>
+            <li class="list-group-item d-flex align-items-center b-item">
+              <img src="Gambar/gambar1.jpg" alt="Judul Berita 4" class="me-3 b-object">
+              <a href="#" class="link-dark link-offset-2 link-underline-opacity-0">Judul Berita 4</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="border-top">
+      <div class="container">
+        <div class="py-4">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Tentang</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Profil</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Struktur Kampus</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Fasilitas</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">RIPK/Tahun</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Akademik</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Jurusan</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kalender Akademik</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Mahasiswa</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ormawa (BEM)</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Himpunan</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">UKM</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+              <h2>Subscribe for more information</h2>
+              <div class="col-sm-2">
+                <a class="navbar-brand" href="https://www.instagram.com/sttcipasung_official?igsh=bzZnMm43ZzhudTVw">
+                  <i class="bi bi-instagram"> sttcipasung_official</i>
+                </a>
+                <a class="navbar-brand" href="https://www.tiktok.com/@sttcipasung?_t=8qxyNedEnR4&_r=1">
+                  <i class="bi bi-tiktok"> sttcipasung</i>
+                </a>
+                <a class="navbar-brand" href="https://www.facebook.com/sttcipasung?mibextid=ZbWKwL">
+                  <i class="bi bi-facebook"> Sekolah Tinggi Teknologi Cipasung</i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row justify-content-between border-top">
+            <p>© 2024 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#twitter"></use>
+                  </svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#instagram"></use>
+                  </svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#facebook"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

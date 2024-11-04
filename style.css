@@ -30,3 +30,13 @@ main{
     object-fit: cover;
 }
 
+
+.b-item{
+    height: 100px;
+
+}
+.b-object{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
