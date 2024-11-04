@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="shadow navbar py-0 navbar-expand-lg bg-primary-subtle fixed-top">
+        <div class="container">
+          <a class="navbar" href="#">
+            <img src="./Gambar/logo.png" alt="logo" class="logo img-fluid no-background">
+          </a>
+          <button class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarScroll" 
+              aria-controls="navbarScroll" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse me-5" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item dropdown">
+                <a class="nav-link me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tentang
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profil</a></li>
+                  <li><a class="dropdown-item" href="#">Struktur Kampus</a></li>
+                  <li><a class="dropdown-item" href="#">Fasilitas</a></li>
+                  <li><a class="dropdown-item" href="#">RIPK/Tahun</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Akademik
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu position-relative">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="jurusanDropdown" role="button">Jurusan</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="IF.html">Informatika</a></li>
+                      <li><a class="dropdown-item" href="TI.html">Teknik Industri</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Kalender Akademik</a></li>
+                </ul>
+              </li>
+              
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mahasiswa
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Ormawa (BEM)</a></li>
+                  <li><a class="dropdown-item" href="#">Himpunan</a></li>
+                  <li><a class="dropdown-item" href="#">UKM</a></li>
+                  <li><a class="dropdown-item" href="#">Beasiswa</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav-link me-3" href="http://s.id/pmbsttc">PMB Online
+                </a>
+              </li>
+                <a class="btn btn-primary" href="#" role="button">Log In</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div class="text-center">
+        </div>
+        <div class="form-container">
+            <h1 class="text-center">FORM PENDAFTARAN MAHASISWA BARU</h1>
+            <form id="form" method="POST">
+                <div class="alert alert-secondary">
+                    <strong>DATA DIRI</strong>
+                </div>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-group">
+                            <label>Nama Lengkap :</label>
+                            <input type="text" name="nama" class="form-control" placeholder="Masukkan Nama Lengkap">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Nomor Identitas (NIK) :</label>
+                            <input type="text" name="nik" class="form-control" placeholder="Masukkan Nomor NIK">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label>Tempat Lahir :</label>
+                            <input type="text" name="tempat lahir" class="form-control" placeholder="Masukkan Tempat Lahir">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label>Tanggal Lahir:</label>
+                            <input type="date" name="tanggal_lahir" class="form-control" placeholder="Masukkan Tanggal Lahir">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label>Status :</label>
+                            <select class="form-control" name="status">
+                                <option>pilih</option>
+                                <option value="Belum Menikah">Belum Menikah</option>
+                                <option value="Menikah">Menikah</option>
+                                <option value="Duda">Duda</option>
+                                <option value="Janda">Janda</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                        <label>Jenis Kelamin :</label>
+                        <br>
+                        <input type="radio" name="jk" value="Laki-Laki"> Laki-Laki
+                        <br>
+                        <input type="radio" name="jk" value="Perempuan"> Perempuan
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                    <label>Agama :</label>
+                    <select  class="form-control" name="agama">
+                        <option>Pilih</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                <label>Kewarganegaraan :</label>
+                <br>
+                <input type="radio" name="kwn" value="WNI"> Warga Negara Indonesia (WNI)
+                <br>
+                <input type="radio" name="kwn" value="WNA"> Warga Negara Asing (WNI)
+             </div>
+         </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>E-mail :</label>
+                <input type="email" name="email" class="form-control" placeholder="Masukkan E-mail">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-grooup">
+                <label>Nomor Handphone :</label>
+                <input type="text" name="no_hp" class="form-control" placeholder="Masukkan Nomor Handphone">
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <div class="form-group">
+                <label>Ibu Kandung :</label>
+                <input type="text" name="nama_ibu" class="form-control" placeholder="Masukkan Nama Ibu Kandung">
+            </div>
+        </div>
+    </div>
+    <div class="alert-secondary">
+        <strong>DATA ALAMAT DOMISILI</strong>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Alamat Rumah :</label>
+                <textarea class="form-control" name="alamat_rumah" rows="2" id="alamat"></textarea>
+            </div>
+            <div class="col-sm-2">
+            <div class="form-group">
+                <label>Kode pos :</label>
+                <input type="text" name="kode_pos" class="form-control" placeholder="Masukkan Kode Pos">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="form-group">
+                <label>Kecamatan :</label>
+                <input type="text" name="kecamatan" class="form-control" placeholder="Masukkan Kecamatan">
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="form-group">
+                <label>Kabupaten/Kota :</label>
+                <input type="text" name="kabupaten" class="form-control" placeholder="Masukkan Kabupaten/Kota">
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="form-group">
+                <label>Provinsi :</label>
+                <input type="text" name="provinsi" class="form-control" placeholder="Masukkan Provinsi">
+            </div>
+        </div>
+    </div>
+    <div class="alert-secondary">
+        <strong>DATA PENDIDIKAN TERAKHIR</strong>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label>Asal Sekolah :</label>
+                <input type="text" name="asal_sekolah" class="form-control" placeholder="Masukkan Asal Sekolah">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label>Jurusan :</label>
+                <select class="form-control" name="pendidikan">
+                    <option>Pilih</option>
+                    <option value="SMA-IPA">SMA - IPA</option>
+                    <option value="SMA-IPS">SMA - IPS</option>
+                    <option value="MAN-IPA">MAN - IPA</option>
+                    <option value="MAN-IPS">MAN - IPS</option>
+                    <option value="SMK-Ekonomi">SMK - Ekonomi</option>
+                    <option value="SMK-Teknik">SMK - Teknik</option>
+                    <option value="SMK-Keterampilan">SMK - KeterampilanSMA</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="form-group">
+                <label>Tahun Lulus :</label>
+                <input type="text" name="lulusan" class="form-control" placeholder="Masukkan Tahun Lulus">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Rata-Rata Nilai Rapor:</label>
+                <input type="text" name="nilai-raport" class="form-control" placeholder="Masukkan Rata-Rata Nilai Rapor">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+        <div class="form-group">
+            <label>Alamat Sekolah:</label>
+            <textarea class="form-control" name="alamat_sekolah" rows="2" id="alamat"></textarea>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label>Akreditasi Sekolah:</label>
+            <select class="form-control" name="pendidikan">
+                <option>Pilih</option>
+                <option value="A">A (Amat baik)</option>
+                <option value="B">B (Baik)</option>
+                <option value="C">C (Cukup)</option>
+                <option value="D">D (Tidak terakreditasi)</option>
+            </select>
+        </div>
+    </div>
+    </div>
+    <div class="alert-secondary">
+        <strong>PILIHAN PROGRAM STUDI</strong>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                 <div class="form-group">
+                      <label>Pilih Program Studi 1 :</label>
+                      <select class="form-control" name="prog1">
+                          <option>Pilih</option>
+                          <option value="S1 - Teknik Industri">S1 - Teknik Industri</option>
+                          <option value=" S1 - Informatika">S1 - Informatika</option>
+                          <select>
+                        </div>
+                    </div>
+                <!-- Add the remaining form fields here -->
+                <div class="alert alert-success text-center">
+                    <strong>
+                        <input type="checkbox" name="pernyataan1" value="pernyataan1">
+                        Saya menyatakan bahwa data yang saya isikan diatas sudah benar.
+                        <br>
+                        <input type="checkbox" name="pernyataan2" value="pernyataan2">
+                        Saya bersedia menerima sanksi pembatalan penerimaan di program studi yang saya pilih apabila saya melanggar pernyataan ini.
+                    </strong>
+                </div>
+                <div class="text-center container">
+                    <button type="submit" name="submit" class="btn btn-primary">Daftar</button>
+                    <button type="reset" name="reset" class="btn btn-primary">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div style="background-color: black;" class="container p-3 my-3 border">
+            <h6 style="color: white;" class="text-center">Kelompok4_pw ~ copyright 2024 Powered by Visual Studio code</h6>
+        </div>
+    </main>
+    
+    <footer class="border-top">
+      <div class="container">
+        <div class="py-4">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Tentang</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Profil</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Struktur Kampus</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Fasilitas</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">RIPK/Tahun</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Akademik</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Jurusan</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kalender Akademik</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Mahasiswa</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ormawa (BEM)</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Himpunan</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">UKM</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <h2>Subscribe for more information</h2>
+              <div class="col-sm-2">
+                <a class="navbar-brand" href="https://www.instagram.com/sttcipasung_official?igsh=bzZnMm43ZzhudTVw">
+                <i class="bi bi-instagram">  sttcipasung_official</i>
+              </a>
+              <a class="navbar-brand" href="https://www.tiktok.com/@sttcipasung?_t=8qxyNedEnR4&_r=1">
+                <i class="bi bi-tiktok">  sttcipasung</i>
+              </a>
+              <a class="navbar-brand" href="https://www.facebook.com/sttcipasung?mibextid=ZbWKwL">
+                <i class="bi bi-facebook">  Sekolah Tinggi Teknologi Cipasung</i>
+              </a>
+            </div>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between border-top">
+            <p>© 2024 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
