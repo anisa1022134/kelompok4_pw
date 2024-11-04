@@ -30,13 +30,22 @@ main{
     object-fit: cover;
 }
 
+.b-item{
+    height: 100px;
+
+}
+.b-object{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
 .dropdown-submenu {
     position: relative;
   }
   
   .dropdown-submenu > .dropdown-menu {
     top: 0;
-    left: 100%; /* Pindahkan submenu ke sebelah kanan */
+    left: 100%;
     margin-top: -1px;
     display: none;
   }
@@ -48,3 +57,4 @@ main{
 .navbar .dropdown-toggle::after{
     display: none;
 }  
+
