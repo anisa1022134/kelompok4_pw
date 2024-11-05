@@ -18,15 +18,19 @@
         <a class="navbar" href="index.html">
           <img src="./Gambar/logo.png" alt="logo" class="logo img-fluid no-background">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarScroll" 
+            aria-controls="navbarScroll" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse me-5" id="navbarScroll">
           <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
             <li class="nav-item dropdown">
-              <a class="nav-link me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Tentang
               </a>
               <ul class="dropdown-menu">
@@ -37,18 +41,24 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Akademik
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Jurusan</a></li>
-                <li><a class="dropdown-item" href="#">Kalender Akademik</a></li>
+                <li class="dropdown-submenu position-relative">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="jurusanDropdown" role="button">Jurusan</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="IF.html">Informatika</a></li>
+                    <li><a class="dropdown-item" href="TI.html">Teknik Industri</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="K.akademik.html">Kalender Akademik</a></li>
               </ul>
             </li>
+            
+            
             <li class="nav-item dropdown">
-              <a class="nav-link me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Mahasiswa
               </a>
               <ul class="dropdown-menu">
@@ -62,7 +72,7 @@
               <a class="nav-link me-3" href="PMB.html">PMB Online
               </a>
             </li>
-            <a class="btn btn-primary" href="#" role="button">Log In</a>
+              <a class="btn btn-primary" href="#" role="button">Log In</a>
             </li>
         </div>
       </div>
@@ -134,16 +144,15 @@
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">RIPK/Tahun</a></li>
               </ul>
             </div>
-
+      
             <div class="col-6 col-md-2 mb-3">
               <h5>Akademik</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Jurusan</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kalender Akademik</a>
-                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kalender Akademik</a></li>
               </ul>
             </div>
-
+      
             <div class="col-6 col-md-2 mb-3">
               <h5>Mahasiswa</h5>
               <ul class="nav flex-column">
@@ -152,35 +161,29 @@
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">UKM</a></li>
               </ul>
             </div>
-
+      
             <div class="col-md-5 offset-md-1 mb-3">
               <h2>Subscribe for more information</h2>
               <div class="col-sm-2">
                 <a class="navbar-brand" href="https://www.instagram.com/sttcipasung_official?igsh=bzZnMm43ZzhudTVw">
-                  <i class="bi bi-instagram"> sttcipasung_official</i>
-                </a>
-                <a class="navbar-brand" href="https://www.tiktok.com/@sttcipasung?_t=8qxyNedEnR4&_r=1">
-                  <i class="bi bi-tiktok"> sttcipasung</i>
-                </a>
-                <a class="navbar-brand" href="https://www.facebook.com/sttcipasung?mibextid=ZbWKwL">
-                  <i class="bi bi-facebook"> Sekolah Tinggi Teknologi Cipasung</i>
-                </a>
-              </div>
+                <i class="bi bi-instagram">  sttcipasung_official</i>
+              </a>
+              <a class="navbar-brand" href="https://www.tiktok.com/@sttcipasung?_t=8qxyNedEnR4&_r=1">
+                <i class="bi bi-tiktok">  sttcipasung</i>
+              </a>
+              <a class="navbar-brand" href="https://www.facebook.com/sttcipasung?mibextid=ZbWKwL">
+                <i class="bi bi-facebook">  Sekolah Tinggi Teknologi Cipasung</i>
+              </a>
+            </div>
             </div>
           </div>
-
+      
           <div class="d-flex flex-column flex-sm-row justify-content-between border-top">
             <p>© 2024 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                    <use xlink:href="#twitter"></use>
-                  </svg></a></li>
-              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                    <use xlink:href="#instagram"></use>
-                  </svg></a></li>
-              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                    <use xlink:href="#facebook"></use>
-                  </svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
             </ul>
           </div>
         </div>
