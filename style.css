@@ -74,7 +74,6 @@ footer{
 }
 footer p,
 footer a,
-footer h5,
 footer h2,
 footer i{
   text-decoration: none;
@@ -83,11 +82,18 @@ footer i{
 footer a:hover{
   color: rgb(0, 140, 255);
 }
+footer h5{
+  color: rgb(0, 140, 255);
+}
 .share-buttons a{
   text-decoration: none;
 }
 .highlight{
   color: red;
+  text-shadow: 2px 2px 4px black;
+}
+nav a{
+  
 }
 
   #teknikIndustri {
