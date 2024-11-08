@@ -69,24 +69,19 @@ label {
 .no-resize{
     resize: none;
 }
-footer {
-    background: url(Gambar/footer-bg.png);
-    color: #ff0000; /* Warna teks */
-  }
-  footer h5, footer h2 {
-    color: #ffffff;
-  }
-  footer div a {
-    color: #0011ff; /* Warna tautan */
-    text-decoration: none;  
-  }
-  footer a:hover {
-    color: #ff0000; /* Warna saat hover */
-    text-decoration: none;
-  }
-  footer p {
-    color: #ffffff; /* Warna teks umum di footer */
-  }
-
-
-
+footer{
+  background-color: #014289;
+}
+footer p,
+footer a,
+footer h5,
+footer i{
+  text-decoration: none;
+  color: white;
+}
+footer a:hover{
+  color: rgb(0, 140, 255);
+}
+.share-buttons a{
+  text-decoration: none;
+}
