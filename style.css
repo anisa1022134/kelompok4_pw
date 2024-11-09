@@ -7,7 +7,7 @@ main{
     height: 70px;
     
 }
-.c-item img{
+.carousel-inner img{
     height: 560px;
     object-fit: cover;
 
@@ -79,8 +79,9 @@ footer i{
   text-decoration: none;
   color: white;
 }
-footer a:hover{
-  color: rgb(0, 140, 255);
+footer a:hover,
+footer i:hover{
+  color: rgb(5, 226, 255);
 }
 footer h5{
   color: rgb(0, 140, 255);
@@ -91,9 +92,6 @@ footer h5{
 .highlight{
   color: red;
   text-shadow: 2px 2px 4px black;
-}
-nav a{
-  
 }
 
   #teknikIndustri {
