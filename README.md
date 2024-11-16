@@ -30,3 +30,5 @@ Kelas: Informatika V C
 =======
 perubahan tanggal 16 november 2024
 >>>>>>> 18cdbe9c8bd86ce317c1349a6c5ee799a218a30a
+
+perubahan kembali tanggal 16 november 2024
