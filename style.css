@@ -12,13 +12,6 @@ main{
     object-fit: cover;
 
 }
-
-.c-cap{
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    font-size: 18px;
-  }
 .card-item img{
     height: 100%;
     object-fit:cover;
@@ -70,7 +63,7 @@ label {
     resize: none;
 }
 footer{
-  background-color: #014289;
+  background-color: #003f13;
 }
 footer p,
 footer a,
@@ -81,17 +74,13 @@ footer i{
 }
 footer a:hover,
 footer i:hover{
-  color: rgb(5, 226, 255);
+  color: rgb(125, 204, 125);
 }
 footer h5{
-  color: rgb(0, 140, 255);
+  color: rgb(125, 204, 125);
 }
 .share-buttons a{
   text-decoration: none;
-}
-.highlight{
-  color: red;
-  text-shadow: 2px 2px 4px black;
 }
 
   #teknikIndustri {
