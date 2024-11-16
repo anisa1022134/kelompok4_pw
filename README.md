@@ -25,6 +25,7 @@ NIM  : 10222182
 Kelas: Informatika V C
 
 nyoba conflict
+uji coba conflict
 perubahan tanggal 16 november 2024
 
 
