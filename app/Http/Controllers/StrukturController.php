@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProfilController extends Controller
+class StrukturController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,7 +12,7 @@ class ProfilController extends Controller
     public function index()
     {
         //
-        return view("profil.index");
+        return view("struktur.index");
     }
 
     /**

@@ -5,7 +5,7 @@
 <main>
 <div class="mt-4 form-container">
         <h1 class="text-center">FORM PENDAFTARAN MAHASISWA BARU</h1>
-        <form method="post" class="bg-info-subtle form-grup">
+        <form method="post" class="shadow-xl form-grup">
             <div class="text-center alert alert-secondary">
                 <strong>DATA PRIBADI</strong>
             </div>
