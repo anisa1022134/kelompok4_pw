@@ -24,8 +24,8 @@ Route::get('/pmb', function () {
 
 Route::resource('/profil', ProfilController::class);
 Route::resource('/struktur', StrukturController::class);
-Route::resource('/ormawa',BeasiswaController::class);
-Route::resource('/beasiswa',OrmawaController::class);
+Route::resource('/beasiswa',BeasiswaController::class);
+Route::resource('/ormawa',OrmawaController::class);
 Route::resource('/informatika',InformatikaController::class);
 Route::resource('/industri',IndustriController::class);
 Route::resource('/kalender',KalenderController::class);

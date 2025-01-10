@@ -1,21 +1,22 @@
 <nav class="bg-white shadow-xl" x-data="{ tentangOpen: false, mahasiswaOpen: false, mobileOpen: false }">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-20 items-center justify-between">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <!-- Mobile menu button-->
-          <button type="button" @click="mobileOpen = !mobileOpen" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-            <span class="absolute -inset-0.5"></span>
-            <span class="sr-only">Open main menu</span>
+        <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+            <!-- Mobile menu button -->
+            <button type="button" @click="mobileOpen = !mobileOpen" class="relative inline-flex items-center justify-center sm:justify-end rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
 
-            <svg :class="{'hidden': mobileOpen, 'block': !mobileOpen }" class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+              <svg :class="{'hidden': mobileOpen, 'block': !mobileOpen }" class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
 
-            <svg :class="{'block': mobileOpen, 'hidden': !mobileOpen }" class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
+              <svg :class="{'block': mobileOpen, 'hidden': !mobileOpen }" class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
         <div class="flex shrink-0 items-center">
           <img class="h-16 w-auto" src="img/logo.png" alt="Your Company">
         </div>
@@ -28,7 +29,14 @@
               <!-- Dropdown untuk Tentang -->
               <div class="relative ml-3" x-data="{ open: false }">
                 <button @click="open = !open" @click.away="open = false" class="relative flex items-center rounded-full">
-                  <span class="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-700 hover:text-white">Tentang</span>
+                    <span class="rounded-md px-3 py-2 text-sm font-medium
+                    {{request()->is('profil') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
+                    {{request()->is('struktur') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
+                    {{request()->is('fasilitas') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
+                    {{request()->is('ripk') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
+                    ">
+                        Tentang
+                    </span>
                 </button>
                 <div x-show="open"
                   x-transition:enter="transition ease-out duration-100 transform"
@@ -39,10 +47,10 @@
                   x-transition:leave-end="opacity-0 scale-95"
                   class="absolute z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
                   role="menu" aria-orientation="vertical">
-                  <a href="{{route('profil.index')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profil</a>
-                  <a href="{{route('struktur.index')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Struktur Kampus</a>
-                  <a href="{{route('fasilitas.index')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Fasilitas</a>
-                  <a href="{{route('ripk.index')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">RIPK/Tahun</a>
+                  <a href="{{route('profil.index')}}" class="block px-4 py-2 {{request()->is('profil') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Profil</a>
+                  <a href="{{route('struktur.index')}}" class="block px-4 py-2 text-sm {{request()->is('struktur') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Struktur Kampus</a>
+                  <a href="{{route('fasilitas.index')}}" class="block px-4 py-2 text-sm {{request()->is('fasilitas') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Fasilitas</a>
+                  <a href="{{route('ripk.index')}}" class="block px-4 py-2 text-sm {{request()->is('ripk') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">RIPK/Tahun</a>
                 </div>
               </div>
 
@@ -82,7 +90,10 @@
               <!-- Dropdown untuk Mahasiswa -->
               <div class="relative ml-3" x-data="{ open: false }">
                 <button @click="open = !open" @click.away="open = false" class="relative flex items-center rounded-full">
-                  <span class="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-700 hover:text-white">Mahasiswa</span>
+                  <span class="rounded-md px-3 py-2 text-sm font-medium
+                  {{request()->is('beasiswa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
+                  {{request()->is('ormawa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
+                  ">Mahasiswa</span>
                 </button>
                 <div x-show="open"
                   x-transition:enter="transition ease-out duration-100 transform"
@@ -93,8 +104,8 @@
                   x-transition:leave-end="opacity-0 scale-95"
                   class="absolute z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
                   role="menu" aria-orientation="vertical">
-                  <a href="{{route('ormawa.index')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ormawa</a>
-                  <a href="{{route('beasiswa.index')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Beasiswa</a>
+                  <a href="{{route('ormawa.index')}}" class="block px-4 py-2 text-sm {{request()->is('ormawa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Ormawa</a>
+                  <a href="{{route('beasiswa.index')}}" class="block px-4 py-2 text-sm {{request()->is('beasiswa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Beasiswa</a>
                 </div>
               </div>
 
