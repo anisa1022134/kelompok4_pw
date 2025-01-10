@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:title>
-        Profil
+        Ormawa
     </x-slot>
 
     <div>
