@@ -11,7 +11,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="Gambar/IF1.JPG" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/IF1.jpg') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption top-0 d-none d-md-block align-content-center">
               <h1 class="display-1 fw-bolder text-capitalize" >INFORMATIKA</h1>
               <p>Pengenalan Jurusan Informatika</p>
@@ -19,10 +19,10 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="Gambar/IF2.JPG" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/IF2.jpg') }}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/IF3.JPG" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/IF3.jpg') }}" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
@@ -40,7 +40,7 @@
         Bersama jurusan Informatika Sekolah Tinggi Teknologi Cipasung menghadirkan generasi yang melek terhadap teknologi dan berani berinovasi kreatif sehingga lahirlah generasi yang “Mampu Menganalisa, Merancang, dan Membangun App & Perangkat Komputer, paham terhadap Information Tech Development, Comp and Network Security, Robotics and Embedded System”
 
     <div class="clearfix container " style="text-align: justify;">
-        <img src="Gambar/Informatika.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+        <img src="{{ asset('img/Informatika.jpg') }}" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
         <div class="container text-center">
           <div class="row">
             <div class="col-md-6 col-sm-3 bordered">
@@ -180,7 +180,7 @@
           <div class="row">
             <div class="col-md-4 mb-4">
               <div class="card shadow-sm border-0">
-                <img src="Gambar/Alumni1_IF.jpg" class="card-img-top alumni-img" alt="Foto Alumni 1">
+                <img src="{{ asset('img/Alumni1_IF.jpg') }}" class="card-img-top alumni-img" alt="Foto Alumni 1">
                 <div class="card-body">
                   <h5 class="card-title">Abdul Fatah</h5>
                   <p class="text-muted">Software Engineer di PT Teknologi Cerdas</p>
@@ -190,7 +190,7 @@
             </div>
             <div class="col-md-4 mb-4">
               <div class="card shadow-sm border-0">
-                <img src="Gambar/Alumni2_IF.jpg" class="card-img-top alumni-img" alt="Foto Alumni 2">
+                <img src="{{ asset('img/Alumni2_IF.jpg') }}" class="card-img-top alumni-img" alt="Foto Alumni 2">
                 <div class="card-body">
                   <h5 class="card-title">M. Hizaz Badruzaman</h5>
                   <p class="text-muted">Data Scientist di MID Data Analytics</p>
@@ -200,7 +200,7 @@
             </div>
             <div class="col-md-4 mb-4">
               <div class="card shadow-sm border-0">
-                <img src="Gambar/Alumni3_IF.jpg" class="card-img-top alumni-img" alt="Foto Alumni 3">
+                <img src="{{ asset('img/Alumni3_IF.jpg') }}" class="card-img-top alumni-img" alt="Foto Alumni 3">
                 <div class="card-body">
                   <h5 class="card-title">Anisa</h5>
                   <p class="text-muted">Cybersecurity Analyst di SecureTech Solutions</p>
