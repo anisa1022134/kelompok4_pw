@@ -14,8 +14,8 @@
               <div class="card shadow-sm border-0">
                 <img src="{{ asset('img/bapak.jpg') }}" class="object-none h-96" alt="">
                 <div class="card-body">
-                  <h5 class="card-title">Pembina Sekolah Tinggi Teknologi Cipasung</h5>
-                  <p class="text-muted">Software Engineer di PT Teknologi Cerdas</p>
+                  <h5 class="card-title">Drs.KH. Abdul Chobir, M.T.</h5>
+                  <p class="text-muted">Pembina Sekolah Tinggi Teknologi Cipasung</p>
                   <p class="card-text">"Para dosen sangat kompeten dan selalu mendukung pengembangan keterampilan kami."</p>
                 </div>
               </div>
@@ -24,8 +24,8 @@
               <div class="card shadow-sm border-0">
                 <img src="{{ asset('img/bu ida.jpg') }}" class="object-cover h-96" alt="">
                 <div class="card-body">
-                  <h5 class="card-title">Senat Sekolah Tinggi Teknologi Cipasung</h5>
-                  <p class="text-muted">Data Scientist di MID Data Analytics</p>
+                  <h5 class="card-title">Dra.Hj Neng Ida Nurhalida, M.pd</h5>
+                  <p class="text-muted">Senat Sekolah Tinggi Teknologi Cipasung</p>
                   <p class="card-text">"Saya sangat berterima kasih kepada STTC yang telah membekali saya dengan ilmu yang aplikatif di dunia kerja. Pengalaman di sini juga membantu saya membangun jaringan profesional yang sangat bermanfaat."</p>
                 </div>
               </div>
@@ -34,8 +34,8 @@
               <div class="card shadow-sm border-0">
                 <img src="{{ asset('img/ade.jpg') }}" class="object-cover h-96" alt="">
                 <div class="card-body">
-                  <h5 class="card-title">Ketua Sekolah Tinggi Teknologi Cipasung</h5>
-                  <p class="text-muted">Cybersecurity Analyst di SecureTech Solutions</p>
+                  <h5 class="card-title">Ahmad Zamakhsyari Sidiq, M.T.</h5>
+                  <p class="text-muted">Ketua Sekolah Tinggi Teknologi Cipasung</p>
                   <p class="card-text">"Program Studi Informatika STTC mempersiapkan saya untuk menghadapi tantangan di bidang keamanan siber. Kurikulum yang relevan dan lingkungan belajar yang mendukung sangat membantu saya mencapai karir impian."</p>
                 </div>
               </div>
