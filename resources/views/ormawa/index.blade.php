@@ -29,7 +29,7 @@
                 <li>08. UKM KELAPA</li>
                 <li>09. UKM Dignity</li>
                 <li>10. UKM Keluarga Donor Darah</li>
-                <li>12. UKM Proclub</li>
+                <li>11. UKM Proclub</li>
             </ul>
         </section>
 
