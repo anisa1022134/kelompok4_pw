@@ -16,7 +16,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Drs.KH. Abdul Chobir, M.T.</h5>
                   <p class="text-muted">Pembina Sekolah Tinggi Teknologi Cipasung</p>
-                  <p class="card-text">"Para dosen sangat kompeten dan selalu mendukung pengembangan keterampilan kami."</p>
+                  <p class="card-text">"Sebagai pembina, saya ingin menyampaikan bahwa pendidikan adalah pondasi peradaban. Kampus ini hadir untuk memberikan ilmu yang bermanfaat, membentuk karakter yang mulia, dan mencetak generasi yang mampu memberikan kontribusi nyata bagi masyarakat. Mari bersama-sama mewujudkan visi ini dengan semangat belajar dan dedikasi yang tinggi."</p>
                 </div>
               </div>
             </div>
@@ -26,7 +26,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Dra.Hj Neng Ida Nurhalida, M.pd</h5>
                   <p class="text-muted">Senat Sekolah Tinggi Teknologi Cipasung</p>
-                  <p class="card-text">"Saya sangat berterima kasih kepada STTC yang telah membekali saya dengan ilmu yang aplikatif di dunia kerja. Pengalaman di sini juga membantu saya membangun jaringan profesional yang sangat bermanfaat."</p>
+                  <p class="card-text">"Saya sangat berterima kasih kepada STTC yang telah membekali saya dengan ilmu yang aplikatif di dunia kerja. Pengalaman di sini juga membantu saya membangun jaringan profesional yang sangat bermanfaat.Kepada seluruh mahasiswa dan generasi muda, saya ingin mengingatkan bahwa perjalanan menuju kesuksesan dimulai dari tekad untuk terus belajar. Di kampus ini, kami memberikan pendidikan yang aplikatif dan relevan dengan kebutuhan zaman. Manfaatkan setiap kesempatan, bangunlah relasi, dan jadilah individu yang mampu membawa perubahan di masyarakat."</p>
                 </div>
               </div>
             </div>
@@ -36,7 +36,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Ahmad Zamakhsyari Sidiq, M.T.</h5>
                   <p class="text-muted">Ketua Sekolah Tinggi Teknologi Cipasung</p>
-                  <p class="card-text">"Program Studi Informatika STTC mempersiapkan saya untuk menghadapi tantangan di bidang keamanan siber. Kurikulum yang relevan dan lingkungan belajar yang mendukung sangat membantu saya mencapai karir impian."</p>
+                  <p class="card-text">"Di era modern ini, tantangan di dunia kerja semakin kompleks, terutama dalam bidang teknologi dan keamanan siber. Sebagai ketua, saya mengajak kalian untuk memanfaatkan semua fasilitas, program, dan kurikulum yang telah dirancang di kampus ini. Jadikan tempat ini sebagai wadah untuk mengembangkan potensi, membangun inovasi, dan mempersiapkan diri menjadi profesional yang kompeten di kancah global."</p>
                 </div>
               </div>
             </div>
