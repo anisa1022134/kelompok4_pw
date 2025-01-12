@@ -30,10 +30,7 @@
               <div class="relative ml-3" x-data="{ open: false }">
                 <button @click="open = !open" @click.away="open = false" class="relative flex items-center rounded-full">
                     <span class="rounded-md px-3 py-2 text-sm font-medium
-                    {{request()->is('profil') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
-                    {{request()->is('struktur') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
-                    {{request()->is('fasilitas') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
-                    {{request()->is('ripk') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
+                    {{request()->is('profil','struktur','fasilitas','ripk') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
                     ">
                         Tentang
                     </span>
@@ -57,7 +54,9 @@
               <div class="relative ml-3" x-data="{ isAcademicOpen: false }">
                 <div>
                     <button type="button" @click="isAcademicOpen = !isAcademicOpen" @click.away="isAcademicOpen = false" class="relative flex rounded-full">
-                        <span class="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-700 hover:text-white">Akademik</span>
+                        <span class="rounded-md px-3 py-2 text-sm font-medium
+                        {{request()->is('informatika','industri','kalender') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">
+                        Akademik</span>
                     </button>
                 </div>
 
@@ -73,15 +72,17 @@
 
                     <!-- Dropdown untuk Jurusan -->
                     <div class="relative group">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jurusan</a>
-                        <div class="absolute left-full top-0 hidden w-48 bg-white rounded-md shadow-lg ring-1 ring-black/5 group-hover:block">
-                            <a href="{{route('informatika.index')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Informatika</a>
-                            <a href="{{route('industri.index')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Teknik Industri</a>
+                        <a href="#" class="block px-4 py-2 text-sm
+                        {{request()->is('informatika','industri') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
+                        ">Jurusan</a>
+                        <div class="absolute top-0 left-full hidden w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 group-hover:block">
+                            <a href="{{route('informatika.index')}}" class="block px-4 py-2 text-sm {{request()->is('informatika') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Informatika</a>
+                            <a href="{{route('industri.index')}}" class="block px-4 py-2 text-sm {{request()->is('industri') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Teknik Industri</a>
                         </div>
                     </div>
 
                     <!-- Link to Kalender Akademik -->
-                    <a href="{{route('kalender.index')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Kalender Akademik</a>
+                    <a href="{{route('kalender.index')}}" class="block px-4 py-2 text-sm {{request()->is('kalender') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}" role="menuitem">Kalender Akademik</a>
                 </div>
             </div>
 
@@ -91,8 +92,7 @@
               <div class="relative ml-3" x-data="{ open: false }">
                 <button @click="open = !open" @click.away="open = false" class="relative flex items-center rounded-full">
                   <span class="rounded-md px-3 py-2 text-sm font-medium
-                  {{request()->is('beasiswa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
-                  {{request()->is('ormawa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
+                  {{request()->is('beasiswa','ormawa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
                   ">Mahasiswa</span>
                 </button>
                 <div x-show="open"
@@ -120,10 +120,49 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div x-show="mobileOpen" class="sm:hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pb-3 pt-2">
-        <a href="/home" class="block rounded-md px-3 py-2 text-base font-medium {{request()->is('home') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Home</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tentang</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Akademik</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Mahasiswa</a>
+        <a href="/" class="block rounded-md px-3 py-2 text-base font-medium {{request()->is('/') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Home</a>
+        <div x-data="{ isOpen: false }">
+            <button @click="isOpen = !isOpen" class="block w-full text-left rounded-md px-3 py-2 text-base font-medium
+            {{request()->is('profil','stuktur','fasilitas','ripk') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">
+            Tentang
+            </button>
+            <div x-show="isOpen" class="space-y-1 my-1 pl-4">
+              <a href="{{route('profil.index')}}" class="block rounded-md px-3 py-2 text-base font-medium {{request()->is('profil') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Profil</a>
+              <a href="{{route('struktur.index')}}" class="block rounded-md px-3 py-2 text-base font-medium {{request()->is('struktur') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Struktur</a>
+              <a href="{{route('fasilitas.index')}}" class="block rounded-md px-3 py-2 text-base font-medium {{request()->is('fasilitas') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Fasilitas</a>
+              <a href="{{route('ripk.index')}}" class="block rounded-md px-3 py-2 text-base font-medium {{request()->is('ripk') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">RIPK/Tahun</a>
+            </div>
+          </div>
+
+        <div x-data="{ isOpen: false }">
+            <button @click="isOpen = !isOpen" class="block w-full text-left rounded-md px-3 py-2 text-base font-medium
+            {{request()->is('jurusan','kalender') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">
+            Akademik
+            </button>
+            <div x-show="isOpen" class="space-y-1 my-1 pl-4">
+                <div x-data="{ isOpen: false }">
+                    <button @click="isOpen = !isOpen" class="block w-full text-left rounded-md px-3 py-2 text-base font-medium
+                    {{request()->is('industri','informatika') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">
+                    Jurusan
+                    </button>
+                    <div x-show="isOpen" class="space-y-1 my-1 pl-4">
+                      <a href="{{route('informatika.index')}}" class="block rounded-md px-3 py-2 text-base font-medium {{request()->is('informatika') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Informatika</a>
+                      <a href="{{route('industri.index')}}" class="block rounded-md px-3 py-2 text-base font-medium {{request()->is('industri') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Industri</a>
+                    </div>
+                  </div>
+              <a href="{{route('kalender.index')}}" class="block rounded-md px-3 py-2 text-base font-medium {{request()->is('kalender') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Kalender</a>
+            </div>
+          </div>
+        <div x-data="{ isOpen: false }">
+            <button @click="isOpen = !isOpen" class="block w-full text-left rounded-md px-3 py-2 text-base font-medium
+            {{request()->is('beasiswa','ormawa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">
+            Mahasiswa
+            </button>
+            <div x-show="isOpen" class="space-y-1 my-1 pl-4">
+              <a href="{{route('ormawa.index')}}" class="block rounded-md px-3 py-2 text-base font-medium {{request()->is('ormawa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Ormawa</a>
+              <a href="{{route('beasiswa.index')}}" class="block rounded-md px-3 py-2 text-base font-medium {{request()->is('beasiswa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Beasiswa</a>
+            </div>
+          </div>
         <a href="/pmb" class="block rounded-md px-3 py-2 text-base font-medium {{request()->is('pmb') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">PMB Online</a>
         <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">LogIn</a>
       </div>

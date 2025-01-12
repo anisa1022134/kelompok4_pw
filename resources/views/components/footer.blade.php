@@ -5,24 +5,30 @@
             <div class="col-6 col-md-2 mb-3">
               <h5>Tentang</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="p-0">Profil</a></li>
-                <li class="nav-item mb-2"><a href="#" class="p-0">Struktur Kampus</a></li>
-                <li class="nav-item mb-2"><a href="#" class="p-0">Fasilitas</a></li>
-                <li class="nav-item mb-2"><a href="#" class="p-0">RIPK/Tahun</a></li>
+                <li class="nav-item mb-2"><a href="{{route('profil.index')}}" class="p-0">Profil</a></li>
+                <li class="nav-item mb-2"><a href="{{route('struktur.index')}}" class="p-0">Struktur Kampus</a></li>
+                <li class="nav-item mb-2"><a href="{{route('fasilitas.index')}}" class="p-0">Fasilitas</a></li>
+                <li class="nav-item mb-2"><a href="{{route('ripk.index')}}" class="p-0">RIPK/Tahun</a></li>
               </ul>
             </div>
 
             <div class="col-6 col-md-2 mb-3">
               <h5>Akademik</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="p-0">Jurusan</a></li>
-                <li class="nav-item mb-2"><a href="#" class="p-0">Kalender Akademik</a></li>
+                <p class="mb-0 text-gray-400">Jurusan</p>
+                <li class="mb-0"><a href="{{route('informatika.index')}}">Informatika</a></li>
+                <li class="mb-2"><a href="{{route('industri.index')}}">Industri</a></li>
+
+                <li class="nav-item mb-2"><a href="{{route('kalender.index')}}" class="p-0">Kalender Akademik</a></li>
               </ul>
             </div>
 
             <div class="col-6 col-md-2 mb-3">
               <h5>Mahasiswa</h5>
-               <a href="#" class="p-0">Ormawa</a>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="{{route('ormawa.index')}}" class="p-0">Ormawa</a></li>
+                <li class="nav-item mb-2"><a href="{{route('beasiswa.index')}}" class="p-0">Beasiswa</a></li>
+              </ul>
             </div>
 
             <div class="col-md-5 offset-md-1 mb-3">

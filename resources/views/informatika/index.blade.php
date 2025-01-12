@@ -1,4 +1,5 @@
 <x-layout>
+    
     <x-slot:title>
         informatika
     </x-slot>

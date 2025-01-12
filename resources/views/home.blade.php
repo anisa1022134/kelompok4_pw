@@ -31,7 +31,7 @@
                         <img src="img/gambar1.jpg" class="card-img-top card-img" alt="Berita 1">
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 1</h5>
-                            <p class="card-text">Ini adalah ringkasan berita 1. Ini memberikan sedikit informasi tentang konten berita.</p>
+                            <p class="card-text line-clamp-2">Ini adalah ringkasan berita 1. Ini memberikan sedikit informasi tentang konten berita Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis ad assumenda autem eos similique perferendis, nulla numquam maxime enim, porro ullam tempora reiciendis necessitatibus magni odio possimus est aliquam..</p>
                             <a href="berita1.html" class="btn btn-success">Baca Selengkapnya</a>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                         <img src="img/gambar2.jpg" class="card-img-top card-img" alt="Berita 2">
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 2</h5>
-                            <p class="card-text">Ini adalah ringkasan berita 2. Ini memberikan sedikit informasi tentang konten berita.</p>
+                            <p class="card-text line-clamp-2">Ini adalah ringkasan berita 2. Ini memberikan sedikit informasi tentang konten berita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officiis facilis iusto earum tenetur aut mollitia id optio eum molestiae. Possimus amet laboriosam incidunt dignissimos. Exercitationem quis magnam minima tempora!</p>
                             <a href="#" class="btn btn-success">Baca Selengkapnya</a>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                         <img src="img/gambar3.jpg" class="card-img-top card-img" alt="Berita 3">
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 3</h5>
-                            <p class="card-text">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita.</p>
+                            <p class="card-text line-clamp-2">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos voluptatibus officiis dolor officia itaque quas accusantium, quasi voluptates odio natus velit ratione eos similique totam aperiam nemo fugit temporibus?</p>
                             <a href="#" class="btn btn-success">Baca Selengkapnya</a>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                         <img src="img/gambar1.jpg" class="card-img-top card-img" alt="Berita 3">
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 3</h5>
-                            <p class="card-text">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita.</p>
+                            <p class="card-text line-clamp-2">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ab ipsa? Porro neque rem illum quaerat exercitationem molestiae officia dicta sit mollitia distinctio. Sequi unde laboriosam inventore enim totam debitis!</p>
                             <a href="#" class="btn btn-success">Baca Selengkapnya</a>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                         <img src="img/gambar2.jpg" class="card-img-top card-img" alt="Berita 3">
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 3</h5>
-                            <p class="card-text">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita.</p>
+                            <p class="card-text line-clamp-2">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio ratione iste cumque eos animi corrupti repellat quis eligendi suscipit quasi esse illo illum perferendis, adipisci, eveniet rerum ipsam similique! Quos?</p>
                             <a href="#" class="btn btn-success">Baca Selengkapnya</a>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                         <img src="img/gambar3.jpg" class="card-img-top card-img" alt="Berita 3">
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 3</h5>
-                            <p class="card-text">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita.</p>
+                            <p class="card-text line-clamp-2">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio sunt eligendi quod illum laborum exercitationem placeat, officia voluptatem magnam, laudantium iste libero! Voluptatibus, ex? Ipsa, error. Accusamus rem dolorem quas.</p>
                             <a href="#" class="btn btn-success">Baca Selengkapnya</a>
                         </div>
                     </div>
