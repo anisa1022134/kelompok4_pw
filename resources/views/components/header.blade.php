@@ -109,7 +109,7 @@
                 </div>
               </div>
 
-              <a href="/pmb" class="{{request()->is('pmb') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}} rounded-md px-3 py-2 text-sm font-medium">PMB Online</a>
+              <a href="{{route('pmb.index')}}" class="{{request()->is('pmb') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}} rounded-md px-3 py-2 text-sm font-medium">PMB Online</a>
               <a href="#" class="rounded-md px-3 py-2 text-sm font-medium bg-green-700 text-white hover:bg-green-400">LogIn</a>
             </div>
           </div>
