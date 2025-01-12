@@ -8,9 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Pmb extends Model
 {
     use HasFactory;
-
     protected $table = 'pmb'; // Nama tabel di database
-
+    protected $dates = ['created_at', 'updated_at'];
     protected $fillable = [
         'nama_lengkap',
         'nik',
@@ -38,4 +37,8 @@ class Pmb extends Model
         'pernyataan1',
         'pernyataan2',
     ];
+
+    public $timestamps = true; // Pastikan timestamps diaktifkan
+
+
 }

@@ -14,6 +14,6 @@ class PmbSeeder extends Seeder
      */
     public function run()
     {
-        Pmb::factory()->count(50)->create(); // Membuat 50 data contoh
+        Pmb::factory()->count(25)->create(); // Membuat 50 data contoh
     }
 }

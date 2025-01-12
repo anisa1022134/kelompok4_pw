@@ -5,7 +5,7 @@
     <main>
         <div class="container mt-4 shadow-xl p-4 form-container">
             <h1 class="text-center">FORM PENDAFTARAN MAHASISWA BARU</h1>
-            <form action="{{ route('pmb.store') }}" method="post">
+            <form action="{{route('pmb.index')}}" method="post">
                 @csrf
 
                 <!-- DATA PRIBADI -->
@@ -81,7 +81,7 @@
                         </div>
                         <div class="col-sm-3">
                             <label class="m-2">No. Handphone :</label>
-                            <input type="text" name="no_handphone" class="form-control" placeholder="Masukkan Nomor Handphone" required>
+                            <input type="number" name="no_handphone" class="form-control" placeholder="Masukkan Nomor Handphone" required>
                         </div>
                         <div class="col-sm">
                             <label class="m-2">Ibu Kandung :</label>
@@ -110,7 +110,7 @@
                         </div>
                         <div class="col">
                             <label class="m-2">Kode Pos :</label>
-                            <input type="text" name="kode_pos" class="form-control" placeholder="Masukkan Kode Pos" required>
+                            <input type="number" name="kode_pos" class="form-control" placeholder="Masukkan Kode Pos" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -144,17 +144,19 @@
                         </div>
                         <div class="col-sm">
                             <label class="m-2">Tahun Lulus :</label>
-                            <input type="text" name="tahun_lulus" class="form-control" placeholder="Masukkan Tahun Lulus" required>
+                            <input type="number" min="1900" max="{{ date('Y') }}" name="tahun_lulus" class="form-control" placeholder="Masukkan Tahun Lulus" required>
+
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-4">
                             <label class="m-2">Rata-Rata Nilai Raport :</label>
-                            <input type="text" name="rata_nilai" class="form-control" placeholder="Masukkan Rata-Rata Nilai Raport" required>
+                            <input type="number" step="0.01" name="nilai_raport" class="form-control" placeholder="Masukkan Rata-Rata Nilai Raport" required>
+
                         </div>
                         <div class="col-sm-3">
                             <label class="m-2">Akreditasi Sekolah :</label>
-                            <select class="form-control" name="akreditasi_sekolah_asal" required>
+                            <select class="form-control" name="akreditasi_sekolah" required>
                                 <option value="">Pilih</option>
                                 <option value="A">A (Amat Baik)</option>
                                 <option value="B">B (Baik)</option>
@@ -175,7 +177,7 @@
                 </div>
                 <div class="col-sm mb-3">
                     <label class="m-2">Pilih Program Studi :</label>
-                    <select class="form-control" name="prog1" required>
+                    <select class="form-control" name="program_studi" required>
                         <option value="">Pilih</option>
                         <option value="S1 - Teknik Industri">S1 - Teknik Industri</option>
                         <option value="S1 - Informatika">S1 - Informatika</option>
@@ -185,9 +187,9 @@
                 <!-- PERNYATAAN -->
                 <div class="alert alert-success text-center">
                     <strong>
-                        <input type="checkbox" name="pernyataan1" value="pernyataan1" required>
+                        <input type="checkbox" name="pernyataan1" value="1" required>
                         Saya menyatakan bahwa data yang saya isikan di atas sudah benar.<br>
-                        <input type="checkbox" name="pernyataan2" value="pernyataan2" required>
+                        <input type="checkbox" name="pernyataan2" value="1" required>
                         Saya bersedia menerima sanksi pembatalan penerimaan di program studi yang saya pilih apabila saya melanggar pernyataan ini.
                     </strong>
                 </div>
