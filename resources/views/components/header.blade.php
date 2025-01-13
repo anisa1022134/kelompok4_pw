@@ -92,7 +92,7 @@
               <div class="relative ml-3" x-data="{ open: false }">
                 <button @click="open = !open" @click.away="open = false" class="relative flex items-center rounded-full">
                   <span class="rounded-md px-3 py-2 text-sm font-medium
-                  {{request()->is('beasiswa','ormawa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
+                  {{request()->is('beasiswa','ormawa','beasiswadetail') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}
                   ">Mahasiswa</span>
                 </button>
                 <div x-show="open"
@@ -105,7 +105,7 @@
                   class="absolute z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
                   role="menu" aria-orientation="vertical">
                   <a href="{{route('ormawa.index')}}" class="block px-4 py-2 text-sm {{request()->is('ormawa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Ormawa</a>
-                  <a href="{{route('beasiswa.index')}}" class="block px-4 py-2 text-sm {{request()->is('beasiswa') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Beasiswa</a>
+                  <a href="{{route('beasiswa.index')}}" class="block px-4 py-2 text-sm {{request()->is('beasiswa','beasiswadetail') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}}">Beasiswa</a>
                 </div>
               </div>
 

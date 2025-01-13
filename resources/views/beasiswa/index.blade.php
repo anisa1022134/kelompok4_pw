@@ -19,21 +19,21 @@
                   Beasiswa BAZNAS
              </h3>
              <p>Beasiswa S1 BAZNAS Kabupaten Tasikmalaya adalah program beasiswa bagi mahasiswa yang sedang menempuh studi di kampus mitra Beasiswa BAZNAS Kabupaten Tasikmalaya untuk semester 7 & 8.</p>
-             <button class="btn btn-success">Baca Selengkapnya</button>
+             <button class="btn btn-success"><a class="text-white" href="{{route('beasiswadetail.index')}}">Baca Selengkapnya</a></button>
         </div>
         <div class="my-4">
              <h3>
                   Beasiswa BAZNAS
              </h3>
              <p>Beasiswa S1 BAZNAS Kabupaten Tasikmalaya adalah program beasiswa bagi mahasiswa yang sedang menempuh studi di kampus mitra Beasiswa BAZNAS Kabupaten Tasikmalaya untuk semester 7 & 8.</p>
-             <button class="btn btn-success">Baca Selengkapnya</button>
+             <button class="btn btn-success"><a class="text-white" href="{{route('beasiswadetail.index')}}">Baca Selengkapnya</a></button>
         </div>
         <div class="my-4">
              <h3>
                   Beasiswa BAZNAS
              </h3>
              <p>Beasiswa S1 BAZNAS Kabupaten Tasikmalaya adalah program beasiswa bagi mahasiswa yang sedang menempuh studi di kampus mitra Beasiswa BAZNAS Kabupaten Tasikmalaya untuk semester 7 & 8.</p>
-             <button class="btn btn-success">Baca Selengkapnya</button>
+             <button class="btn btn-success"><a class="text-white" href="{{route('beasiswadetail.index')}}">Baca Selengkapnya</a></button>
         </div>
         <div class="my-4">
              <h3>

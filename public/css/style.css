@@ -4,6 +4,15 @@
     height: 70px;
 
 }
+.b-item{
+    height: 100px;
+
+}
+.b-object{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
 .carousel-inner img{
     height: 700px;
     object-fit: cover;

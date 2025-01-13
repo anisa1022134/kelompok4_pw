@@ -32,7 +32,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 1</h5>
                             <p class="card-text line-clamp-2">Ini adalah ringkasan berita 1. Ini memberikan sedikit informasi tentang konten berita Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis ad assumenda autem eos similique perferendis, nulla numquam maxime enim, porro ullam tempora reiciendis necessitatibus magni odio possimus est aliquam..</p>
-                            <a href="berita1.html" class="btn btn-success">Baca Selengkapnya</a>
+                            <a href="{{route('berita.index')}}" class="btn btn-success">Baca Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 2</h5>
                             <p class="card-text line-clamp-2">Ini adalah ringkasan berita 2. Ini memberikan sedikit informasi tentang konten berita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officiis facilis iusto earum tenetur aut mollitia id optio eum molestiae. Possimus amet laboriosam incidunt dignissimos. Exercitationem quis magnam minima tempora!</p>
-                            <a href="#" class="btn btn-success">Baca Selengkapnya</a>
+                            <a href="{{route('berita.index')}}" class="btn btn-success">Baca Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 3</h5>
                             <p class="card-text line-clamp-2">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos voluptatibus officiis dolor officia itaque quas accusantium, quasi voluptates odio natus velit ratione eos similique totam aperiam nemo fugit temporibus?</p>
-                            <a href="#" class="btn btn-success">Baca Selengkapnya</a>
+                            <a href="{{route('berita.index')}}" class="btn btn-success">Baca Selengkapnya</a>
                         </div>
                     </div>
                 </div>

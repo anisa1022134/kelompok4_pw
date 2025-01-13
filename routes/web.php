@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BeasiswaController;
+use App\Http\Controllers\BeasiswadetailController;
 use App\Http\Controllers\FasilitasController;
 use App\Http\Controllers\IndustriController;
 use App\Http\Controllers\InformatikaController;
@@ -10,15 +11,18 @@ use App\Http\Controllers\PmbController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\RipkController;
 use App\Http\Controllers\StrukturController;
+use App\Http\Controllers\BeritaController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Pmb;
 
 Route::get('/', function () {
     return view('home');
-
 });
 
-
+Route::resource('/beasiswadetail', BeasiswadetailController::class);
+Route::resource('/berita', BeritaController::class);
+Route::resource('/berita/index2', BeritaController::class);
+Route::resource('/berita/index1', BeritaController::class);
 Route::resource('/profil', ProfilController::class);
 Route::resource('/struktur', StrukturController::class);
 Route::resource('/beasiswa',BeasiswaController::class);
@@ -59,4 +63,5 @@ Route::post('/pmb',function(){
     'pernyataan1'=>request('pernyataan1'),
     'pernyataan2'=>request('pernyataan2')
    ]);
+
 });
