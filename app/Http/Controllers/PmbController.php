@@ -66,7 +66,10 @@ class PmbController extends Controller
         // Simpan data ke database
         Pmb::create($validatedData);
 
-        return redirect()->route('pmb.index')->with('success', 'Data PMB berhasil disimpan!');
+        return redirect()->route('pmb.index')
+        ->with('success', 'Data PMB berhasil disimpan!');
+        dd('Data berhasil disimpan!');
+
     }
 
     /**

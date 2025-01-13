@@ -31,8 +31,6 @@ Route::resource('/ripk',RipkController::class);
 
 Route::resource('/pmb',PmbController::class);
 
-
-
 Route::post('/pmb',function(){
    Pmb::create([
     'nama_lengkap'=>request('nama_lengkap'),
