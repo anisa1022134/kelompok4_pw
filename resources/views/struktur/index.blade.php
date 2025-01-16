@@ -5,14 +5,14 @@
     <h1 class="text-center m-4">Struktur STT Cipasung</h1>
 
     <div class="container pb-5">
-        <img src="{{ asset('img/Struktur.png') }}" class="d-block w-100" alt="...">
+        <img src="{{ asset('storage/img/Struktur.png') }}" class="d-block w-100" alt="...">
 
         <section id="testimoni-alumni" class="container my-5">
           <h2 class="text-center mb-4">Pimpinan STT Cipasung</h2>
           <div class="row">
             <div class="col-md-4 mb-4">
               <div class="card shadow-sm border-0">
-                <img src="{{ asset('img/bapak.jpg') }}" class="object-none h-96" alt="">
+                <img src="{{ asset('storage/img/bapak.jpg') }}" class="object-none h-96" alt="">
                 <div class="card-body">
                   <h5 class="card-title">Drs.KH. Abdul Chobir, M.T.</h5>
                   <p class="text-muted">Pembina Sekolah Tinggi Teknologi Cipasung</p>
@@ -22,7 +22,7 @@
             </div>
             <div class="col-md-4 mb-4">
               <div class="card shadow-sm border-0">
-                <img src="{{ asset('img/bu ida.jpg') }}" class="object-cover h-96" alt="">
+                <img src="{{ asset('storage/img/bu ida.jpg') }}" class="object-cover h-96" alt="">
                 <div class="card-body">
                   <h5 class="card-title">Dra.Hj Neng Ida Nurhalida, M.pd</h5>
                   <p class="text-muted">Senat Sekolah Tinggi Teknologi Cipasung</p>
@@ -32,7 +32,7 @@
             </div>
             <div class="col-md-4 mb-4">
               <div class="card shadow-sm border-0">
-                <img src="{{ asset('img/ade.jpg') }}" class="object-cover h-96" alt="">
+                <img src="{{ asset('storage/img/ade.jpg') }}" class="object-cover h-96" alt="">
                 <div class="card-body">
                   <h5 class="card-title">Ahmad Zamakhsyari Sidiq, M.T.</h5>
                   <p class="text-muted">Ketua Sekolah Tinggi Teknologi Cipasung</p>

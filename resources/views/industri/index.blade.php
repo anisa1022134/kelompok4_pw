@@ -6,13 +6,13 @@
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="{{ asset('img/gambar1.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('storage/img/gambar1.jpg') }}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{ asset('img/gambar2.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('storage/img/gambar2.jpg') }}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{ asset('img/gambar3.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('storage/img/gambar3.jpg') }}" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -30,7 +30,7 @@
 
 
     <div class="clearfix container " >
-        <img src="{{ asset('img/TI4.jpg') }}" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+        <img src="{{ asset('storage/img/TI4.jpg') }}" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
 
         <div class="container text-center">
           <div class="row">
@@ -178,7 +178,7 @@
       <div class="row">
           <div class="col-md-4 mb-4">
               <div class="card shadow-sm border-0">
-                  <img src="{{ asset('img/Alumni1_TI.jpg') }}" class="card-img-top alumni-img" alt="Foto Alumni 1">
+                  <img src="{{ asset('storage/img/Alumni1_TI.jpg') }}" class="card-img-top alumni-img" alt="Foto Alumni 1">
                   <div class="card-body" style="text-align: justify;">
                       <h5 class="card-title">Gina Junian mulia</h5>
                       <p class="text-muted">Production Manager di PT Manufaktur Jaya</p>
@@ -188,7 +188,7 @@
           </div>
           <div class="col-md-4 mb-4">
               <div class="card shadow-sm border-0">
-                  <img src="{{ asset('img/Alumni2_TI.jpg') }}" class="card-img-top alumni-img" alt="Foto Alumni 2">
+                  <img src="{{ asset('storage/img/Alumni2_TI.jpg') }}" class="card-img-top alumni-img" alt="Foto Alumni 2">
                   <div class="card-body" style="text-align: justify;">
                       <h5 class="card-title">Fina Triana</h5>
                       <p class="text-muted">Supply Chain Analyst di Global Supply Solutions</p>
@@ -198,7 +198,7 @@
           </div>
           <div class="col-md-4 mb-4">
               <div class="card shadow-sm border-0">
-                  <img src="{{ asset('img/Alumni3_TI.jpg') }}" class="card-img-top alumni-img" alt="Foto Alumni 3">
+                  <img src="{{ asset('storage/img/Alumni3_TI.jpg') }}" class="card-img-top alumni-img" alt="Foto Alumni 3">
                   <div class="card-body" style="text-align: justify;">
                       <h5 class="card-title">Akbar Yasriliawan</h5>
                       <p class="text-muted">Quality Control Specialist di PT Produk Unggul</p>

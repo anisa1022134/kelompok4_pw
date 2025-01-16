@@ -37,17 +37,17 @@
             <h2 class="text-2xl font-bold mb-10">Logo Ormawa</h2>
             <div class="relative overflow-hidden">
                 <div class="flex gap-4 animate-scroll whitespace-nowrap">
-                    <img src="{{ asset('img/LOGO BEM STT Cipasung.png') }}" alt="Logo BEM" style="width: 150px; height: 150px;" class="w-24 h-24 object-contain rounded-lg shadow-md">
-                    <img src="{{ asset('img/Logo HMIF.png') }}" alt="Logo HMTI" style="width: 150px; height: 150px;" class="w-24 h-24 object-contain rounded-lg shadow-md">
-                    <img src="{{ asset('img/Logo HMTI.jpg') }}" alt="Logo HMIF" style="width: 150px; height: 150px;" class="w-24 h-24 object-contain rounded-lg shadow-md">
-                    <img src="{{ asset('img/Logo Kerohanian.png') }}" alt="Logo kerohanian" style="width: 150px; height: 150px;" class="w-24 h-24 object-contain rounded-lg shadow-md">
-                    <img src="{{ asset('img/Logo Olahraga .png') }}" alt="Logo olahraga" style="width: 150px; height: 150px;" class="w-24 h-24 object-contain rounded-lg shadow-md">
-                    <img src="{{ asset('img/Logo Rilis.png') }}" alt="Logo Sanggar" style="width: 150px; height: 150px;" class="w-24 h-24 object-contain rounded-lg shadow-md">
-                    <img src="{{ asset('img/Logo Sanggar.png') }}" alt="Logo Rilis" style="width: 150px; height: 150px;" class="w-24 h-24 object-contain rounded-lg shadow-md">
-                    <img src="{{ asset('img/logo kelapa.png') }}" alt="Logo Rilis" style="width: 150px; height: 150px;" class="w-24 h-24 object-contain rounded-lg shadow-md">
-                    <img src="{{ asset('img/dignity.png') }}" alt="Logo Rilis" style="width: 150px; height: 150px;" class="w-24 h-24 object-contain rounded-lg shadow-md">
-                    <img src="{{ asset('img/logo kdd.png') }}" alt="Logo Rilis" style="width: 150px; height: 150px;" class="w-24 h-24 object-contain rounded-lg shadow-md">
-                    <img src="{{ asset('img/proclub.png') }}" alt="Logo Rilis" style="width: 150px; height: 150px;" class="w-24 h-24 object-contain rounded-lg shadow-md">
+                    <img src="{{ asset('storage/img/LOGO BEM STT Cipasung.png') }}" alt="Logo BEM"  class="h-44 w-44 object-contain rounded-lg shadow-md">
+                    <img src="{{ asset('storage/img/Logo HMIF.png') }}" alt="Logo HMTI"  class="h-44 w-44 object-contain rounded-lg shadow-md">
+                    <img src="{{ asset('storage/img/Logo HMTI.jpg') }}" alt="Logo HMIF"  class="h-44 w-44 object-contain rounded-lg shadow-md">
+                    <img src="{{ asset('storage/img/Logo Kerohanian.png') }}" alt="Logo kerohanian"  class="h-44 w-44 object-contain rounded-lg shadow-md">
+                    <img src="{{ asset('storage/img/Logo Olahraga .png') }}" alt="Logo olahraga"  class="h-44 w-44 object-contain rounded-lg shadow-md">
+                    <img src="{{ asset('storage/img/Logo Rilis.png') }}" alt="Logo Sanggar"  class="h-44 w-44 object-contain rounded-lg shadow-md">
+                    <img src="{{ asset('storage/img/Logo Sanggar.png') }}" alt="Logo Rilis"  class="h-44 w-44 object-contain rounded-lg shadow-md">
+                    <img src="{{ asset('storage/img/logo kelapa.png') }}" alt="Logo Rilis"  class="h-44 w-44 object-contain rounded-lg shadow-md">
+                    <img src="{{ asset('storage/img/dignity.png') }}" alt="Logo Rilis"  class="h-44 w-44 object-contain rounded-lg shadow-md">
+                    <img src="{{ asset('storage/img/logo kdd.png') }}" alt="Logo Rilis"  class="h-44 w-44 object-contain rounded-lg shadow-md">
+                    <img src="{{ asset('storage/img/proclub.png') }}" alt="Logo Rilis"  class="h-44 w-44 object-contain rounded-lg shadow-md">
                 </div>
             </div>
             <style>

@@ -21,9 +21,7 @@ Route::get('/', function () {
 
 Route::resource('/beasiswadetail', BeasiswadetailController::class);
 Route::resource('/berita', BeritaController::class);
-Route::resource('/berita/index2', BeritaController::class);
-Route::resource('/berita/index1', BeritaController::class);
-Route::resource('/profil', ProfilController::class);
+Route::resource('profil', ProfilController::class);
 Route::resource('/struktur', StrukturController::class);
 Route::resource('/beasiswa',BeasiswaController::class);
 Route::resource('/ormawa',OrmawaController::class);

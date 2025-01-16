@@ -5,13 +5,13 @@
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="{{ asset('img/gambar1.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('storage/img/gambar1.jpg') }}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{ asset('img/gambar2.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('storage/img/gambar2.jpg') }}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{ asset('img/gambar3.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('storage/img/gambar3.jpg') }}" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -28,7 +28,7 @@
             <div class="row g-3">
                 <div class="col-md-4">
                     <div class="card bg-light card-item">
-                        <img src="img/gambar1.jpg" class="card-img-top card-img" alt="Berita 1">
+                        <img src="{{asset('storage/img/gambar1.jpg')}}" class="card-img-top card-img" alt="Berita 1">
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 1</h5>
                             <p class="card-text line-clamp-2">Ini adalah ringkasan berita 1. Ini memberikan sedikit informasi tentang konten berita Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis ad assumenda autem eos similique perferendis, nulla numquam maxime enim, porro ullam tempora reiciendis necessitatibus magni odio possimus est aliquam..</p>
@@ -38,7 +38,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card bg-light card-item">
-                        <img src="img/gambar2.jpg" class="card-img-top card-img" alt="Berita 2">
+                        <img src="{{asset('storage/img/gambar2.jpg')}}" class="card-img-top card-img" alt="Berita 2">
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 2</h5>
                             <p class="card-text line-clamp-2">Ini adalah ringkasan berita 2. Ini memberikan sedikit informasi tentang konten berita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officiis facilis iusto earum tenetur aut mollitia id optio eum molestiae. Possimus amet laboriosam incidunt dignissimos. Exercitationem quis magnam minima tempora!</p>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card bg-light card-item">
-                        <img src="img/gambar3.jpg" class="card-img-top card-img" alt="Berita 3">
+                        <img src="{{asset('storage/img/gambar3.jpg')}}" class="card-img-top card-img" alt="Berita 3">
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 3</h5>
                             <p class="card-text line-clamp-2">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos voluptatibus officiis dolor officia itaque quas accusantium, quasi voluptates odio natus velit ratione eos similique totam aperiam nemo fugit temporibus?</p>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card bg-light card-item">
-                        <img src="img/gambar1.jpg" class="card-img-top card-img" alt="Berita 3">
+                        <img src="{{asset('storage/img/gambar1.jpg')}}" class="card-img-top card-img" alt="Berita 3">
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 3</h5>
                             <p class="card-text line-clamp-2">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ab ipsa? Porro neque rem illum quaerat exercitationem molestiae officia dicta sit mollitia distinctio. Sequi unde laboriosam inventore enim totam debitis!</p>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card bg-light card-item">
-                        <img src="img/gambar2.jpg" class="card-img-top card-img" alt="Berita 3">
+                        <img src="{{asset('storage/img/gambar2.jpg')}}" class="card-img-top card-img" alt="Berita 3">
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 3</h5>
                             <p class="card-text line-clamp-2">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio ratione iste cumque eos animi corrupti repellat quis eligendi suscipit quasi esse illo illum perferendis, adipisci, eveniet rerum ipsam similique! Quos?</p>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card bg-light card-item">
-                        <img src="img/gambar3.jpg" class="card-img-top card-img" alt="Berita 3">
+                <img src="{{asset('storage/img/gambar3.jpg')}}" class="card-img-top card-img" alt="Berita 3">
                         <div class="card-body">
                             <h5 class="card-title">Judul Berita 3</h5>
                             <p class="card-text line-clamp-2">Ini adalah ringkasan berita 3. Ini memberikan sedikit informasi tentang konten berita. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio sunt eligendi quod illum laborum exercitationem placeat, officia voluptatem magnam, laudantium iste libero! Voluptatibus, ex? Ipsa, error. Accusamus rem dolorem quas.</p>

@@ -1,4 +1,7 @@
 <x-layout>
+    @foreach ( beritas as berita )
+
+    @endforeach
     <x-slot:title>
         Berita
     </x-slot>
@@ -6,7 +9,7 @@
         <div class="row">
           <div class="col-md-8">
             <div class="card mb-4">
-              <img src="{{asset('img/berita.jpg')}}" class="card-img-top header-image" alt="Gambar Berita">
+              <img src="{{asset('storage/img/berita.jpg')}}" class="card-img-top header-image" alt="Gambar Berita">
               <div class="card-body">
                 <h2>ALUMNI STT CIPASUNG MERAIH PENGHARGAAN SEBAGAI PESERTA DAN CAPSTONE TERBAIK BAPAREKRAF DIGITAL TALENT</h2>
                 <p class="text-muted">Dipublikasikan pada 1 November 2024 oleh Admin Kampus</p>
@@ -35,15 +38,15 @@
             <h3>Berita Terkait</h3>
             <ul class="list-group related-news">
               <li class="list-group-item d-flex align-items-center b-item">
-                <img src="{{asset('img/berita2.jpeg')}}" alt="Judul Berita 2" class="me-3 b-object">
+                <img src="{{asset('storage/img/berita2.jpeg')}}" alt="Judul Berita 2" class="me-3 b-object">
                 <a href="#" class="link-dark link-offset-2 link-underline-opacity-0">Judul Berita 2</a>
               </li>
               <li class="list-group-item d-flex align-items-center b-item">
-                <img src="{{asset('img/berita.jpg')}}" alt="Judul Berita 4" class="me-3 b-object">
+                <img src="{{asset('storage/img/berita.jpg')}}" alt="Judul Berita 4" class="me-3 b-object">
                 <a href="#" class="link-dark link-offset-2 link-underline-opacity-0">Judul Berita 4</a>
               </li>
               <li class="list-group-item d-flex align-items-center b-item">
-                <img src="{{asset('img/berita.jpg')}}" alt="Judul Berita 4" class="me-3 b-object">
+                <img src="{{asset('storage/img/berita.jpg')}}" alt="Judul Berita 4" class="me-3 b-object">
                 <a href="#" class="link-dark link-offset-2 link-underline-opacity-0">Judul Berita 4</a>
               </li>
 

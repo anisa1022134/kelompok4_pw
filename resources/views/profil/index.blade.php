@@ -5,7 +5,7 @@
 
     <body class="bg-white-100 font-sans">
     <header class="text-center py-8 mb-6">
-        <img src="img/logo-sttc.png" alt="Logo STT Cipasung" class="w-30 mx-auto mb-4">
+        <img src="{{asset('storage/img/logo-sttc.png')}}" alt="Logo STT Cipasung" class="w-30 mx-auto mb-4">
         <h1 class="text-4xl font-bold text-green-600">VISI & MISI</h1>
     </header>
     <main class="max-w-7xl mx-auto mt-8 p-8 bg-white shadow-lg rounded-lg">
@@ -51,7 +51,7 @@
                 <br><br>
             </p>
             <p class="text-gray-700">
-                
+
                 Pemrakarsa utama berdirinya Sekolah Tinggi Teknologi Cipasung adalah <strong>Drs. H. Abdul Chobir, MT</strong> atas anjuran Pimpinan Pondok Pesantren Cipasung pada masa itu, yaitu KH. Moh. Ilyas Ruhiat. Pendirian kampus ini juga atas bantuan dan arahan dari tim Institut Teknologi Bandung, serta dorongan dari Prof. Dr. Ginanjar Kartasasmita dan Ir. Fadel Muhammad ketika melakukan kunjungan ke Pondok Pesantren Cipasung.
                 <br><br>
                 <strong class="text-1xl font-semibold text-green-600 border-b-2 border-green-600 pb-2 mb-4">Sejarah Singkat STT Cipasung</strong>
@@ -80,7 +80,7 @@
                 </p>
             </div>
             <div class="w-full md:w-1/3 flex-shrink-0">
-                <img src="img/logo-sttc.png" alt="Lambang STT Cipasung" class="w-full md:w-auto mx-auto">
+                <img src="{{asset('storage/img/logo-sttc.png')}}" alt="Lambang STT Cipasung" class="w-full md:w-auto mx-auto">
             </div>
         </div>
     </section>

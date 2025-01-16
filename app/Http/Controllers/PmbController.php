@@ -68,8 +68,7 @@ class PmbController extends Controller
 
         return redirect()->route('pmb.index')
         ->with('success', 'Data PMB berhasil disimpan!');
-        dd('Data berhasil disimpan!');
-
+       
     }
 
     /**
