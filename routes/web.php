@@ -11,7 +11,7 @@ use App\Http\Controllers\PmbController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\RipkController;
 use App\Http\Controllers\StrukturController;
-use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Pmb;
 
@@ -30,9 +30,15 @@ Route::resource('/industri',IndustriController::class);
 Route::resource('/kalender',KalenderController::class);
 Route::resource('/fasilitas',FasilitasController::class);
 Route::resource('/ripk',RipkController::class);
+Route::resource('/news', NewsController::class);
+
+Route::post('/news', [NewsController::class, 'store']); // Tambah berita
+Route::get('/news', [NewsController::class, 'index']); // List berita
+Route::get('/news/{id}', [NewsController::class, 'show']);
+
+
 
 Route::resource('/pmb',PmbController::class);
-
 Route::post('/pmb',function(){
    Pmb::create([
     'nama_lengkap'=>request('nama_lengkap'),
