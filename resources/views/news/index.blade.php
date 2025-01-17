@@ -1,7 +1,7 @@
 <x-layout>
 
     <x-slot:title>
-        Berita
+        News
     </x-slot>
     <div class="container my-5">
         <div class="row">

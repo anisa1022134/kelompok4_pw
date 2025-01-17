@@ -12,15 +12,16 @@ use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\RipkController;
 use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Pmb;
 
 Route::get('/', function () {
-    return view('home');
+    return view('/home');
 });
-
+Route::resource('/', HomeController::class);
 Route::resource('/beasiswadetail', BeasiswadetailController::class);
-Route::resource('/berita', NewsController::class);
+Route::resource('/news', NewsController::class);
 Route::resource('profil', ProfilController::class);
 Route::resource('/struktur', StrukturController::class);
 Route::resource('/beasiswa',BeasiswaController::class);
@@ -30,7 +31,6 @@ Route::resource('/industri',IndustriController::class);
 Route::resource('/kalender',KalenderController::class);
 Route::resource('/fasilitas',FasilitasController::class);
 Route::resource('/ripk',RipkController::class);
-Route::resource('/news', NewsController::class);
 
 Route::post('/news', [NewsController::class, 'store']); // Tambah berita
 Route::get('/news', [NewsController::class, 'index']); // List berita
@@ -41,5 +41,5 @@ Route::get('/news/{id}', [NewsController::class, 'show']);
 Route::resource('/pmb', PmbController::class);
 Route::post('/pmb', [PmbController::class, 'store'])->name('pmb.store');
 Route::get('/home', function () {
-    return view('home');
-})->name('home');
+    return view('/home');
+})->name('/home');
