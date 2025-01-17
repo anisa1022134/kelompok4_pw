@@ -1,5 +1,5 @@
 <x-layout>
-
+ 
     <x-slot:title>
         Berita
     </x-slot>
