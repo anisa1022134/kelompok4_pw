@@ -5,8 +5,9 @@
     <main>
         <div class="container mt-4 shadow-xl p-4 form-container">
             <h1 class="text-center">FORM PENDAFTARAN MAHASISWA BARU</h1>
-            <form action="{{route('pmb.index')}}" method="post">
+            <form action="{{ route('pmb.store') }}" method="post">
                 @csrf
+
 
                 <!-- DATA PRIBADI -->
                 <div class="text-center alert alert-secondary">

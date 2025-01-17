@@ -24,52 +24,51 @@ class PmbController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created resource in storagze.
      */
     public function store(Request $request)
-    {
-        $validatedData = $request->validate([
-            'nama_lengkap' => 'required|string|max:255',
-            'nik' => 'required|string|unique:pmb|max:16',
-            'tempat_lahir' => 'required|string|max:255',
-            'tanggal_lahir' => 'required|date_format:Y-m-d',
-            'status' => 'required|string|max:50',
-            'jenis_kelamin' => 'required|string|max:10',
-            'agama' => 'required|string|max:50',
-            'kewarganegaraan' => $request->input('kewarganegaraan', 'WNI'), // Default ke WNI
-            'email' => 'required|email|unique:pmb',
-            'no_handphone' => 'required|string|max:15',
-            'nama_ibu' => 'required|string|max:255',
-            'kecamatan' => 'required|string|max:255',
-            'kabupaten' => 'required|string|max:255',
-            'provinsi' => 'required|string|max:255',
-            'kode_pos' => 'required|string|max:10',
-            'alamat_rumah' => 'required|string',
-            'asal_sekolah' => 'required|string|max:255',
-            'jurusan_sekolah_asal' => 'required|string|max:255',
-            'tahun_lulus' => 'required|integer',
-            'nilai_raport' => 'required|numeric|between:0,100',
-            'akreditasi_sekolah' => 'required|string|max:5',
-            'alamat_sekolah' => 'required|string',
-            'program_studi' => 'required|string|max:255',
-            'pernyataan1' => $request->has('pernyataan1'),
-            'pernyataan2' => $request->has('pernyataan2'),
-        ]);
+{
+    // Validasi data yang diterima
+    $validatedData = $request->validate([
+        'nama_lengkap' => 'required|string|max:255',
+        'nik' => 'required|string|max:16',
+        'tempat_lahir' => 'required|string|max:255',
+        'tanggal_lahir' => 'required|date',
+        'status' => 'required|string',
+        'jenis_kelamin' => 'required|string',
+        'agama' => 'required|string',
+        'kewarganegaraan' => 'required|string',
+        'email' => 'required|email',
+        'no_handphone' => 'required|string|max:15',
+        'nama_ibu' => 'required|string|max:255',
+        'kecamatan' => 'required|string|max:255',
+        'kabupaten' => 'required|string|max:255',
+        'provinsi' => 'required|string|max:255',
+        'kode_pos' => 'required|string|max:5',
+        'alamat_rumah' => 'required|string',
+        'asal_sekolah' => 'required|string|max:255',
+        'jurusan_sekolah_asal' => 'required|string|max:255',
+        'tahun_lulus' => 'required|integer',
+        'nilai_raport' => 'required|numeric',
+        'akreditasi_sekolah' => 'required|string|max:2',
+        'alamat_sekolah' => 'required|string',
+        'program_studi' => 'required|string',
+        'pernyataan1' => 'sometimes|boolean',
+        'pernyataan2' => 'sometimes|boolean',
+    ]);
 
-        // Pastikan timestamps otomatis terisi
-        $validatedData['created_at'] = now();
-        $validatedData['updated_at'] = now();
+    // Ubah nilai checkbox ke boolean
+    $validatedData['pernyataan1'] = $request->has('pernyataan1');
+    $validatedData['pernyataan2'] = $request->has('pernyataan2');
 
-        $data['pernyataan1'] = $request->has('pernyataan1') ? 1 : 0;
-        $data['pernyataan2'] = $request->has('pernyataan2') ? 1 : 0;
+    // Simpan data ke database
+    Pmb::create($validatedData);
 
-        // Simpan data ke database
-        Pmb::create($validatedData);
-
-        return redirect()->route('pmb.index')
+    // Redirect ke halaman home dengan pesan sukses
+    return redirect()->route('home')
         ->with('success', 'Data PMB berhasil disimpan!');
-       
-    }
+}
+
 
     /**
      * Display the specified resource.
