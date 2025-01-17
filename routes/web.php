@@ -13,11 +13,14 @@ use App\Http\Controllers\RipkController;
 use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Models\Pmb;
 
-Route::get('/', function () {
-    return view('home');
-});
+// Rute untuk halaman utama (beranda)
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+// Rute untuk detail berita
+Route::get('/berita/{id}', [HomeController::class, 'show'])->name('berita.show');
 
 Route::resource('/beasiswadetail', BeasiswadetailController::class);
 Route::resource('/berita', NewsController::class);
