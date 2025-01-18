@@ -16,7 +16,6 @@ class HomeController extends Controller
     return view('home', compact('beritas'));
 }
 
-
     // Menampilkan detail berita berdasarkan ID
     public function show($id)
     {

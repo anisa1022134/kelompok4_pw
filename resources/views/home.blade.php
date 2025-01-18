@@ -29,18 +29,24 @@
         </button>
     </div>
 
-    <div class="container py-5">
-        <h2>Berita Terbaru</h2>
-        @if(isset($beritas) && $beritas->isNotEmpty())
-            @foreach ($beritas as $berita)
-                <div class="news-item">
-                    <h3><a href="{{ route('berita.show', $berita->id) }}">{{ $berita->judul }}</a></h3>
-                    <p>{{ Str::limit($berita->konten, 150) }}</p>
-                </div>
-            @endforeach
-        @else
-            <p>Belum ada berita terbaru.</p>
-        @endif
-    </div>
+          <h1 class="text-center m-4">Berita Terbaru</h1>
 
+    @if(session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+    @endif
+
+    <div class="row g-3">
+        @foreach($beritas as $berita)
+        <div class="col-md-4">
+            <div class="card bg-light card-item">
+                <img src="{{ asset('storage/covers/' . $berita->gambar) }}" class="card-img-top card-img" alt="{{ $berita->judul }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $berita->judul }}</h5>
+                    <p class="card-text line-clamp-2">{{ $berita->ringkasan }}</p>
+                    <a href="{{ route('berita.show', $berita->id) }}" class="btn btn-success">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+        @endforeach
+    </div>
     </x-layout>

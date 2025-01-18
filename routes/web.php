@@ -21,9 +21,19 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Rute untuk detail berita
 Route::get('/berita/{id}', [HomeController::class, 'show'])->name('berita.show');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+
+// Route untuk tampilkan form tambah berita
+Route::get('/news/create', [NewsController::class, 'create'])->name('news.create');
+
+// Route untuk menyimpan berita baru
+Route::post('/news', [NewsController::class, 'store'])->name('news.store');
+
+
+
 
 Route::resource('/beasiswadetail', BeasiswadetailController::class);
-Route::resource('/berita', NewsController::class);
 Route::resource('profil', ProfilController::class);
 Route::resource('/struktur', StrukturController::class);
 Route::resource('/beasiswa',BeasiswaController::class);
@@ -33,7 +43,7 @@ Route::resource('/industri',IndustriController::class);
 Route::resource('/kalender',KalenderController::class);
 Route::resource('/fasilitas',FasilitasController::class);
 Route::resource('/ripk',RipkController::class);
-Route::resource('/news', NewsController::class);
+
 
 Route::post('/news', [NewsController::class, 'store']); // Tambah berita
 Route::get('/news', [NewsController::class, 'index']); // List berita

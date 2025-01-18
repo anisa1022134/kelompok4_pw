@@ -1,28 +1,31 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\News;
 use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
-    {
-        //
-        $news = News::all();
+{
+    $beritas = News::latest()->paginate(6); // Mengambil berita terbaru
+    return view('news.create', compact('beritas')); // View untuk daftar berita
+}
 
-        return response()->json($news);
-    }
+public function show($id)
+{
+    $berita = News::findOrFail($id); // Ambil berita berdasarkan ID
+    return view('news.detail', compact('berita')); // View untuk detail berita
+}
 
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        //
+        // Menampilkan halaman form untuk tambah berita
+        return view('news.create');
     }
 
     /**
@@ -30,7 +33,7 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validasi input dari form
         $request->validate([
             'title' => 'required|string|max:255',
             'publisher' => 'required|string|max:255',
@@ -39,11 +42,13 @@ class NewsController extends Controller
             'content' => 'required|string',
         ]);
 
+        // Menyimpan file gambar jika ada
         $coverPath = null;
         if ($request->hasFile('cover')) {
             $coverPath = $request->file('cover')->store('covers', 'public');
         }
 
+        // Menyimpan berita baru ke database
         $news = News::create([
             'title' => $request->title,
             'publisher' => $request->publisher,
@@ -52,41 +57,7 @@ class NewsController extends Controller
             'content' => $request->content,
         ]);
 
-        return response()->json(['message' => 'News created successfully!', 'data' => $news]);
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-        $news = News::findOrFail($id);
-
-        return response()->json($news);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
+        // Redirect ke halaman beranda setelah berhasil menambah berita
+        return redirect()->route('home')->with('success', 'Berita berhasil ditambahkan!');
     }
 }
