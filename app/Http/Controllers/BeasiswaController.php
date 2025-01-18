@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Beasiswa;
+
 
 class BeasiswaController extends Controller
 {
@@ -12,7 +14,8 @@ class BeasiswaController extends Controller
     public function index()
     {
         //
-        return view("beasiswa.index");
+        $beasiswas = Beasiswa::latest()->get();
+        return view("beasiswa.index", compact('beasiswas'));
     }
 
     /**
@@ -37,6 +40,8 @@ class BeasiswaController extends Controller
     public function show(string $id)
     {
         //
+        $beasiswas = Beasiswa::latest()->get();
+        return view("beasiswa.index");
     }
 
     /**

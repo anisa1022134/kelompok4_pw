@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class BeasiswadetailController extends Controller
+class FascilityController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,7 +12,6 @@ class BeasiswadetailController extends Controller
     public function index()
     {
         //
-        return view('beasiswadetail.index');
     }
 
     /**
