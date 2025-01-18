@@ -24,7 +24,9 @@
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/" class="{{request()->is('/') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}} rounded-md px-3 py-2 text-sm font-medium">Home</a>
+              <a href="/" class="{{request()->is('/') ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-gray-700 hover:text-white'}} rounded-md px-3 py-2 text-sm font-medium">
+                Home
+                </a>
 
               <!-- Dropdown untuk Tentang -->
               <div class="relative ml-3" x-data="{ open: false }">

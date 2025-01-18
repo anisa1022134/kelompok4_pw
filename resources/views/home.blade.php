@@ -29,24 +29,31 @@
         </button>
     </div>
 
-          <h1 class="text-center m-4">Berita Terbaru</h1>
+    <div class="container-fluid bg-success p-2">
+        <div class="container">
+             <h2 class="text-white text-center">Berita Terbaru</h2>
+        </div>
+   </div>
 
     @if(session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
     @endif
-
-    <div class="row g-3">
-        @foreach($beritas as $berita)
-        <div class="col-md-4">
-            <div class="card bg-light card-item">
-                <img src="{{ asset('storage/covers/' . $berita->gambar) }}" class="card-img-top card-img" alt="{{ $berita->judul }}">
-                <div class="card-body">
-                    <h5 class="card-title">{{ $berita->judul }}</h5>
+    <div class="flex justify-center px-4 sm:px-6 lg:px-8 my-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-lg mx-auto">
+            @foreach ($beritas as $berita)
+            <div class="max-w-xl rounded overflow-hidden shadow-lg">
+                <img class="w-full h-64 object-cover" src="{{ asset('storage/covers/' . $berita->gambar) }}" alt="{{ $berita->judul }}">
+                <div class="px-6 py-4">
+                    <h5 class="card-title line-clamp-2">{{ $berita->judul }}</h5>
                     <p class="card-text line-clamp-2">{{ $berita->ringkasan }}</p>
                     <a href="{{ route('berita.show', $berita->id) }}" class="btn btn-success">Baca Selengkapnya</a>
                 </div>
             </div>
+            @endforeach
         </div>
-        @endforeach
     </div>
+
+
+
+
     </x-layout>
